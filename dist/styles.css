@@ -636,6 +636,22 @@ video {
   margin-right: 50px;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -654,6 +670,10 @@ video {
 
 .h-8 {
   height: 2rem;
+}
+
+.max-h-\[40px\] {
+  max-height: 40px;
 }
 
 .w-full {
@@ -968,6 +988,17 @@ button {
     transform: translateX(0px);
     box-shadow: none;
   }
+}
+
+#section2 {
+  transform: translateY(0rem);
+  transition: transform 1s ease;
+  opacity: 1;
+}
+
+#section2.section--hidden {
+  opacity: 0;
+  transform: translateY(20rem);
 }
 
 .hover\:bg-veryPaleRed:hover {

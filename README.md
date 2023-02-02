@@ -28,11 +28,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](<./design/Screenshot%20(69).png>)
+![](<./design/Screenshot%20(70).png>)
+![](<./design/Screenshot%20(71).png>)
+![](<./design/Screenshot%20(72).png>)
+![](<./design/Screenshot%20(73).png>)
+![](<./design/Screenshot%20(74).png>)
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/responsive-manage-landing-page-built-using-tailwindcss-and-javascript-VDQoDdXb1v)
 - Live Site URL: [Live site URL here](https://manage-landing-pag.netlify.app/)
 
 ## My process
@@ -43,12 +48,12 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- Desktop-first workflow
+- [Tailwind](https://tailwindcss.com/) - CSS Framework
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Resource 1](https://tailwindcss.com/) - This helped me build the website faster without having to write much css codes
 
 ## Author
 

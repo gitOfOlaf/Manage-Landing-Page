@@ -103,10 +103,10 @@
       </figcaption>
     </header>
 
-    <main class="container mx-auto mt-20 overflow-x-hidden">
+    <main class="container mx-auto mt-20 overflow-x-hidden overflow-y-hidden">
       <section
         id="section1"
-        class="flex justify-between items-start lg:flex-row sm:flex-col"
+        class="flex justify-between items-start lg:flex-row sm:flex-col z-10 relative"
       >
         <div
           class="content__left lg:w-2/3 sm:w-full sm:text-center lg:text-left sm:mb-8 lg:mb-0"
@@ -314,7 +314,7 @@
             </div>
           </div>
 
-          <div class="slider_icons">
+          <div class="slider_icons block lg:hidden">
             <div
               class="slider slider_icon__left w-8 h-8 rounded-full bg-veryPaleRed flex justify-center items-center absolute left-0 top-[30%] cursor-pointer"
             >
@@ -446,14 +446,17 @@
         <div
           class="third__container flex flex-col justify-between sm:items-center lg:items-start"
         >
-          <form action="#">
-            <input
-              type="text"
-              placeholder="Updates in your inbox…"
-              class="rounded-full px-2 py-2 outline-none"
-            />
+          <form action="#" class="flex">
+            <div class="input-container block">
+              <input
+                type="text"
+                placeholder="Updates in your inbox…"
+                class="rounded-full px-2 py-2 outline-none"
+              />
+              <p class="errorMsg"></p>
+            </div>
             <button
-              class="bg-veryLightGray px-[15px] py-[5px] rounded-full text-brightRed font-bold"
+              class="submit bg-veryLightGray px-[15px] py-[5px] rounded-full text-brightRed font-bold ml-2 max-h-[40px]"
             >
               Go
             </button>
@@ -469,7 +472,12 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#" target="_blank">Abdullah Ayoola</a>.
+        >. Coded by
+        <a
+          href="https://github.com/abdullah43577/Manage-Landing-Page"
+          target="_blank"
+          >Abdullah Ayoola</a
+        >.
       </div>
     </footer>
   </body>
