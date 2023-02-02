@@ -12,10 +12,15 @@
     />
     <link rel="stylesheet" href="/dist/styles.css" />
     <script defer src="/app/script.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/37007fa821.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body class="h-full w-full relativ">
-    <header class="container mx-auto pt-4 h-auto">
+    <header class="container mx-auto pt-4 h-auto relative">
       <div class="nav flex justify-between items-center sm:pt-5 lg:pt-0">
         <figcaption>
           <img src="/images/logo.svg" alt="logo" class="w-full" />
@@ -219,17 +224,17 @@
         </div>
       </section>
 
-      <section id="section2" class="mt-20 relative">
+      <section id="section2" class="mt-20 relative w-full">
         <h2
           class="text-darkBlue font-bold text-center text-3xl lg:mb-32 sm:mb-8"
         >
           What they’ve said
         </h2>
         <div
-          class="testimonials relative sm:h-[300px] sm:mx-auto lg:h-auto lg:w-auto sm:max-w-[400px] lg:max-w-full"
+          class="testimonials relative sm:h-[300px] sm:mx-auto lg:h-auto lg:w-auto w-full"
         >
           <div
-            class="testimonial1 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-0"
+            class="testimonial testimonial1 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-0"
           >
             <figcaption class="w-[80px] translate-y-[-50px]">
               <img
@@ -250,7 +255,7 @@
           </div>
 
           <div
-            class="testimonial2 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-[500px] lg:translate-x-0"
+            class="testimonial testimonial2 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-[100%] lg:translate-x-0"
           >
             <figcaption class="w-[80px] translate-y-[-45px]">
               <img
@@ -271,7 +276,7 @@
           </div>
 
           <div
-            class="testimonial3 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-[800px] lg:translate-x-0"
+            class="testimonial testimonial3 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-[200%] lg:translate-x-0"
           >
             <figcaption class="w-[80px] translate-y-[-45px]">
               <img
@@ -292,7 +297,7 @@
           </div>
 
           <div
-            class="testimonial4 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-[1200px] lg:translate-x-0"
+            class="testimonial testimonial4 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-[300%] lg:translate-x-0"
           >
             <figcaption class="w-[80px] translate-y-[-45px]">
               <img src="./images/avatar-shanai.png" alt="avatar-shanai
@@ -306,6 +311,20 @@
                 our projects from anywhere. It keeps the whole team in-sync
                 without being intrusive.”
               </p>
+            </div>
+          </div>
+
+          <div class="slider_icons">
+            <div
+              class="slider slider_icon__left w-8 h-8 rounded-full bg-veryPaleRed flex justify-center items-center absolute left-0 top-[30%] cursor-pointer"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+
+            <div
+              class="slider slider_icon__right w-8 h-8 rounded-full bg-veryPaleRed flex justify-center items-center absolute right-0 top-[30%] cursor-pointer"
+            >
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
           </div>
         </div>
