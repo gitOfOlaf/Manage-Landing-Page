@@ -15,26 +15,28 @@
     <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body class="h-full w-full relativ">
-    <header class="container mx-auto pt-4 relative h-auto">
+    <header class="container mx-auto pt-4 h-auto">
       <div class="nav flex justify-between items-center sm:pt-5 lg:pt-0">
         <figcaption>
           <img src="/images/logo.svg" alt="logo" class="w-full" />
         </figcaption>
-        <nav class="sm:hidden lg:block">
-          <ul class="flex">
-            <li class="px-4 hover:text-darkGrayishBlue">
+        <nav class="navBg">
+          <ul
+            class="flex flex-col justify-center items-center h-full lg:flex-row"
+          >
+            <li class="px-4 hover:text-darkGrayishBlue font-bold py-4">
               <a href="#">Pricing</a>
             </li>
-            <li class="px-4 hover:text-darkGrayishBlue">
+            <li class="px-4 hover:text-darkGrayishBlue font-bold py-4">
               <a href="#">Product</a>
             </li>
-            <li class="px-4 hover:text-darkGrayishBlue">
+            <li class="px-4 hover:text-darkGrayishBlue font-bold py-4">
               <a href="#">About Us</a>
             </li>
-            <li class="px-4 hover:text-darkGrayishBlue">
+            <li class="px-4 hover:text-darkGrayishBlue font-bold py-4">
               <a href="#">Careers</a>
             </li>
-            <li class="px-4 hover:text-darkGrayishBlue">
+            <li class="px-4 hover:text-darkGrayishBlue font-bold py-4">
               <a href="#">Community</a>
             </li>
           </ul>
@@ -248,7 +250,7 @@
           </div>
 
           <div
-            class="testimonial2 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-[400px] lg:translate-x-0"
+            class="testimonial2 flex flex-col items-center text-center bg-veryLightGray px-4 lg:relative sm:absolute left-0 sm:top-16 lg:top-0 sm:translate-x-[500px] lg:translate-x-0"
           >
             <figcaption class="w-[80px] translate-y-[-45px]">
               <img
@@ -349,42 +351,51 @@
     </section>
 
     <footer
-      class="bg-veryDarkBlue h-[200px] w-full flex justify-center items-center"
+      class="bg-veryDarkBlue lg:h-[200px] w-full flex justify-center items-center sm:h-auto"
     >
       <div
-        class="footer container mx-auto h-full flex justify-between max-h-[130px]"
+        class="footer container mx-auto h-full flex justify-between lg:max-h-[130px] lg:flex-row sm:flex-col-reverse sm:py-8 lg:py-0"
       >
-        <div class="first__container flex flex-col justify-between h-full">
-          <figcaption>
-            <img src="./images/logo.svg" alt="logo" />
-          </figcaption>
-
-          <div class="social_Container flex">
-            <figcaption class="mr-2 cursor-pointer">
-              <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+        <div
+          class="first__container flex flex-col justify-between h-full sm:items-center lg:items-start"
+        >
+          <div
+            class="mobil flex flex-col-reverse lg:flex-col justify-between h-full"
+          >
+            <figcaption class="my-8 lg:my-0">
+              <img src="./images/logo.svg" alt="logo" />
             </figcaption>
 
-            <figcaption class="mr-2 cursor-pointer">
-              <img src="./images/icon-youtube.svg" alt="icon-youtube" />
-            </figcaption>
+            <div class="social_Container flex">
+              <figcaption class="mr-8 lg:mr-2 cursor-pointer">
+                <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+              </figcaption>
 
-            <figcaption class="mr-2 cursor-pointer">
-              <img src="./images/icon-twitter.svg" alt="icon-twitter" />
-            </figcaption>
+              <figcaption class="mr-8 lg:mr-2 cursor-pointer">
+                <img src="./images/icon-youtube.svg" alt="icon-youtube" />
+              </figcaption>
 
-            <figcaption class="mr-2 cursor-pointer">
-              <img src="./images/icon-pinterest.svg" alt="icon-pinterest" />
-            </figcaption>
+              <figcaption class="mr-8 lg:mr-2 cursor-pointer">
+                <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+              </figcaption>
 
-            <figcaption class="cursor-pointer">
-              <img src="./images/icon-instagram.svg" alt="icon-instagram" />
-            </figcaption>
+              <figcaption class="mr-8 lg:mr-2 cursor-pointer">
+                <img src="./images/icon-pinterest.svg" alt="icon-pinterest" />
+              </figcaption>
+
+              <figcaption class="cursor-pointer">
+                <img src="./images/icon-instagram.svg" alt="icon-instagram" />
+              </figcaption>
+            </div>
           </div>
+          <p class="text-darkGrayishBlue sm:block lg:hidden">
+            Copyright &copy 2023. All Rights Reserved
+          </p>
         </div>
 
-        <div class="second__container">
-          <nav class="flex">
-            <ul class="mr-[100px] text-veryLightGray">
+        <div class="second__container sm:items-center lg:items-start">
+          <nav class="flex justify-center my-6 lg:my-0">
+            <ul class="mr-[50px] lg:mr-[100px] text-veryLightGray">
               <li class="pb-2 hover:text-darkGrayishBlue">
                 <a href="#">Home</a>
               </li>
@@ -399,7 +410,7 @@
               </li>
             </ul>
 
-            <ul class="ml-[100px] text-veryLightGray">
+            <ul class="sm:ml-[50px] lg:ml-[100px] text-veryLightGray">
               <li class="pb-2 hover:text-darkGrayishBlue">
                 <a href="#">Careers</a>
               </li>
@@ -413,7 +424,9 @@
           </nav>
         </div>
 
-        <div class="third__container flex flex-col justify-between">
+        <div
+          class="third__container flex flex-col justify-between sm:items-center lg:items-start"
+        >
           <form action="#">
             <input
               type="text"
@@ -427,7 +440,7 @@
             </button>
           </form>
 
-          <p class="text-darkGrayishBlue">
+          <p class="text-darkGrayishBlue sm:hidden lg:block">
             Copyright &copy 2023. All Rights Reserved
           </p>
         </div>
