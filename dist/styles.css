@@ -636,14 +636,6 @@ video {
   margin-right: 50px;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -999,6 +991,14 @@ button {
 #section2.section--hidden {
   opacity: 0;
   transform: translateY(20rem);
+}
+
+input::-moz-placeholder {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+input::placeholder {
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .hover\:bg-veryPaleRed:hover {
