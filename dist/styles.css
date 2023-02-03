@@ -668,6 +668,10 @@ video {
   max-height: 40px;
 }
 
+.max-h-\[37px\] {
+  max-height: 37px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -982,6 +986,10 @@ button {
   }
 }
 
+figcaption:hover path {
+  fill: hsl(12, 88%, 59%);
+}
+
 #section2 {
   transform: translateY(0rem);
   transition: transform 1s ease;
@@ -995,10 +1003,13 @@ button {
 
 input::-moz-placeholder {
   font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
 }
 
+input,
 input::placeholder {
   font-family: "Be Vietnam Pro", sans-serif;
+  font-size: 14px;
 }
 
 .hover\:bg-veryPaleRed:hover {
@@ -1009,6 +1020,11 @@ input::placeholder {
 .hover\:text-darkGrayishBlue:hover {
   --tw-text-opacity: 1;
   color: hsl(227 12% 61% / var(--tw-text-opacity));
+}
+
+.hover\:text-brightRed:hover {
+  --tw-text-opacity: 1;
+  color: hsl(12 88% 59% / var(--tw-text-opacity));
 }
 
 @media (min-width: 300px) {

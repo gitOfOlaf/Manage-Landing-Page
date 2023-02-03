@@ -22,9 +22,13 @@ form.addEventListener("submit", (e) => {
     return;
   }
   let inputValue = input.value;
-  if (validateEmail(inputValue) === true) errorMessage("right");
-  if (validateEmail(inputValue) === false) errorMessage("wrong");
-  input.value = "";
+  if (validateEmail(inputValue)) {
+    errorMessage("right");
+    input.value = "";
+  }
+  if (!validateEmail(inputValue)) {
+    errorMessage("wrong");
+  }
 });
 
 const errorMessage = function (arg) {
