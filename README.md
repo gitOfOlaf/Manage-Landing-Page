@@ -11,7 +11,6 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 
 ## Overview
 
@@ -55,8 +54,3 @@ Users should be able to:
 
 - [Resource 1](https://tailwindcss.com/) - This helped me build the website faster without having to write much css codes
 
-## Author
-
-- Website - [Abdullah Ayoola](https://github.com/abdullah43577)
-- Frontend Mentor - [@abdullah43577](https://www.frontendmentor.io/profile/abdullah43577)
-- Twitter - [@officialayo540](https://twitter.com/officialayo540)
